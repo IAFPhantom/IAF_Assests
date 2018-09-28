@@ -1,0 +1,30 @@
+IAF_F-15C
+
+f-15
+IAF_F_15C
+
+Name: IAF F-15C
+Type: Air-superiority fighter
+Crew: 1
+Length: 19.43 m
+Height: 5.63 m
+Wing span: 13.05 m
+Wing area: 56.5 m²
+Weight empty: 12790 kg
+Normal weight: 19000 kg
+Maximum weight: 30845 kg
+Maximum Mach at height: 2.5
+G limit: 8
+Range with nominal load: 2540 km
+Maximum fuel: 6103 kg
+Service ceiling: 18300 m
+Take-off speed: 219.6 km/h
+Landing speed: 234 km/h
+Maximum range: 2540 km
+Maximum Mach at S/L: 1.2
+
+Armament:
+- M61A-1 cannon
+- AIM-9M, AIM-120B, AIM-120C, AIM-7
+- Python-3,4,5 and Derby
+- Mk-82, Mk-83, Mk-84
