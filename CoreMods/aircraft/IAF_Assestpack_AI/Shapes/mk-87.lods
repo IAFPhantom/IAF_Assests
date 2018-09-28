@@ -1,0 +1,11 @@
+model={
+	lods={
+		{"mk-82.edm",30.000000};
+		{"mk-82_LOD1.edm",100.000000};
+		{"mk-82_LOD2.edm",200.000000};
+		{"mk-82_LOD3.edm",10000.000000};
+		
+	};
+
+collision_shell="mk-82-collision.edm";
+}

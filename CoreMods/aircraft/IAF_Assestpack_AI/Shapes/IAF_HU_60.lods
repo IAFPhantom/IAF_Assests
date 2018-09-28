@@ -1,0 +1,9 @@
+model = {
+	lods = {
+		{"uh-60a.edm",250.000000},
+		{"uh-60a-lod1.edm",500.000000},
+		{"uh-60a-lod2.edm",1500.000000},
+		{"uh-60a-lod3.edm",50000.000000},
+	},
+	collision_shell = "uh-60a_collision.edm",
+}

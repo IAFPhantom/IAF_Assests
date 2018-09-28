@@ -1,0 +1,12 @@
+model = {
+	lods = {
+		{"ah-64d.edm",50.000000},
+		{"ah-64d_lod1.edm",100.000000},
+		{"ah-64d_lod2.edm",200.000000},
+		{"ah-64d_lod3.edm",300.000000},
+		{"ah-64d_lod4.edm",400.000000},
+		{"ah-64d_lod5.edm",5000.000000},
+		{"ld_tec.edm",10000.000000},
+	},
+	collision_shell = "ah-64d-collision.edm",
+}

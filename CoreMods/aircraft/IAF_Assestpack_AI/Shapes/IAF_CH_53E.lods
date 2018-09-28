@@ -1,0 +1,7 @@
+ model = {
+	lods = {		
+		{"CH-53E.edm", 50000.0};
+		
+	};
+	collision_shell = "AH-1W-COLLISION.EDM";
+}

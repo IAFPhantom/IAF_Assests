@@ -1,0 +1,36 @@
+DerbyER
+
+DerbyER
+
+
+Name: I-DerbyER
+Manafacturer	RAFA'EL Armament Development Authority	
+Date Deployed	Mid 2015	
+Range	 to 100 km	
+Speed	Mach 4.0	
+Propulsion	One Rafael Armaments Development Authority double-base solid propellant rocket motor	
+Guidance	Active Radar homing	
+Warhead	         ( 23 kg )	
+Launch Weight	 ( 118 kg )	
+Length	     ( 3.62 m )	
+Diameter	 ( 160 mm )	
+Fin Span	 ( 0.640 m )	
+
+
+Rafael I-Derby ER Missile
+-----------------------
+I-Derby Extended Range (ER) is the latest variant coming from the legendary Derby missile family which was first introduced in the mid-1990s. 
+
+I-Derby ER which is a new active radar-guided air-to-air missile capable of meeting current and future threats.  A major advantage of the I-Derby ER is that it uses the same missile envelope. I-Derby ER will be compatible with all aircrafts currently cleared to carry Derby. 
+
+I-Derby ER is equipped with a new seeker that employs an advanced solid-state Software Defined Radar (SDR), based on combat-proven technology derived from the Tamir missile, the interceptor used in RAFAEL’s Iron Dome system. Rather than just increase the amount of propellant carried, Rafael opted for a dual-pulse motor. The initial launch pulse is similar to that of the original Derby, but a second pulse can now be fired at a time dictated by the missile’s flight control system, which detects when the weapon is running out of energy. Firing the second pulse is normally undertaken shortly before intercept, greatly increasing the missile’s maneuvering energy in the end-game as a means of expanding its no-escape zone.
+ER uses a unique Dual Pulse rocket motor, enabling it to extend interception range up to 100 km.
+The missile has a dual-mode propelling system that makes it possible to accelerate its flight, particularly at the moment when the missile is approaching its target.
+The missile also boasts of features which are LOAL and Lock On Before Launch (LOBL) capability and all-weather operation and Look down/Shoot-down.
+The missile can be launched from Sea Harrier jet fighter, F-16 (Block 52) Fighting Falcon, F-5E Tiger II, and IAI Kfir combat aircraft. It was exhibited during the Seoul International Aerospace and Defence Exhibition (ADEX) held Seoul, South Korea, in October 2015.
+The active radar seeker provides guidance and improved target accuracy at radio frequency (RF). The radar's look-down / shoot-down capability enables the missile to attack targets below and along the line of the horizon.
+Derby's high-explosive fragmentation (HE-FRAG) warhead defeats non-armoured targets and light material targets.
+The weapon features fire-and-forget engagement capability and can be optionally fitted with advanced, programmable electronic counter countermeasures (ECCM) for operation in hostile environments
+Already cleared on F-16 (Block 52), F-5E, Kfir and Sea Harrier, I-Derby ER integration tests are currently under way on the Indian Tejas LCA
+RAFAEL claims it will be able to deliver 80% of the Meteor’s performance at a third of its cost. It is also superior to the AIM-120C7 
+

@@ -1,0 +1,26 @@
+Python-5
+
+Python5
+
+
+Name: Python-5
+Manafacturer	RAFA'EL Armament Development Authority	
+Date Deployed	Mid 1990's	
+Range	0.5 km to 15 km	
+Speed	Mach 4.0	
+Propulsion	One Rafael Armaments Development Authority double-base solid propellant rocket motor	
+Guidance	IR homing	
+Warhead	         ( 11 kg )	
+Launch Weight	 ( 105 kg )	
+Length	     ( 3.00 m )	
+Diameter	 ( 160 mm )	
+Fin Span	 ( 0.640 m )	
+
+
+Rafael Python-5 Missile
+-----------------------
+Fourth generation air to air all aspect heat seeking missile.
+From Wikipedia, the free encyclopedia
+
+
+
