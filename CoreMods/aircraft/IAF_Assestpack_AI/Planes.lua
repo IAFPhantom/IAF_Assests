@@ -2,7 +2,7 @@
 -- AI Aircraft 
 ---------------------------------------------------------
 dofile(current_mod_path..'/Planes/IAF_ReemTanker.lua')
---dofile(current_mod_path..'/Planes/IAF_C130.lua') -- 
+dofile(current_mod_path..'/Planes/IAF_C-130.lua') -- 
 ---------------------------------------------------------
 --dofile(current_mod_path..'/Planes/IAF_F_15A.lua')
 dofile(current_mod_path..'/Planes/IAF_F_15C.lua')-- Air-Air version; Cockpit+ FM: F-15C
