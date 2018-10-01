@@ -1,6 +1,6 @@
 
 
-IAF_CH_53E =  {
+local IAF_CH_53E =  {
 		Countries			= {"Israel"},
       
 		Name 				=   'IAF_CH_53E',
@@ -46,7 +46,7 @@ IAF_CH_53E =  {
 			fire  = { 240, 2};
 		},
 	},		
-		WorldID 			= 160,
+		--WorldID 			= 160,
         TakeOffRWCategories = 
         {
             [1] = 
@@ -63,7 +63,7 @@ IAF_CH_53E =  {
 			flare = {default = 60, increment = 30, chargeSz = 1}
         },
         
-        attribute = {wsType_Air, wsType_Helicopter, wsType_NoWeapon, CH_53E,
+        attribute = {wsType_Air, wsType_Helicopter, wsType_NoWeapon, WSTYPE_PLACEHOLDER, CH_53E,
         "Transport helicopters",
         },
         Categories = {

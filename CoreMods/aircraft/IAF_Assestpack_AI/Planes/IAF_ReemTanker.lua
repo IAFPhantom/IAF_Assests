@@ -1,6 +1,6 @@
 
 
-IAF_ReemTanker =  {
+local IAF_ReemTanker =  {
   	Countries			= {"Israel"},
       
 	Name 				=   'IAF_ReemTanker',
@@ -33,7 +33,7 @@ IAF_ReemTanker =  {
         Rate = "100",
         Shape = "KC-135",
         WingSpan = 40,
-        WorldID = 60, --recognized as K135
+        WorldID = WSTYPE_PLACEHOLDER,--60, --recognized as K135
 
         singleInFlight = true,
 

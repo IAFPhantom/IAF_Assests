@@ -1,6 +1,6 @@
 
 
-IAF_F_15C =  {
+local IAF_F_15C =  {
   	Countries			= {"Israel"},
       
 	Name 				=   'IAF_F_15C',

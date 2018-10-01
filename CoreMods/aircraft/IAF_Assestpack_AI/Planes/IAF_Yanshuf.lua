@@ -1,6 +1,6 @@
 
 
-IAF_HU_60 =  {
+local IAF_HU_60 =  {
 		Countries			= {"Israel"},
       
 		Name 				=   'IAF_HU_60',
@@ -42,7 +42,7 @@ IAF_HU_60 =  {
 			fire  = { 240, 2};
 		},
 	},		
-		WorldID 			= 162,
+		--WorldID 			= 162,
 		LandRWCategories = 
 		{
 			[1] = 

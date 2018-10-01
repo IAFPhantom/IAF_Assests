@@ -70,6 +70,9 @@ local Bomb_Mk82 = {
 	
 local Bomb_Mk83 = {
 	category			= CAT_BOMBS,
+	name      = "Mk-88 Training mk-83",
+	model     = "mk-87",
+	user_name = _("Mk-88 Training mk-83"),
 	wsTypeOfWeapon	= {wsType_Weapon, wsType_Bomb, wsType_Bomb_A, WSTYPE_PLACEHOLDER},
 	type				= 0,
 	hMin				= 100.0,
@@ -117,6 +120,9 @@ local Bomb_Mk83 = {
 	
 local Bomb_Mk84 = {
 	category			= CAT_BOMBS,
+	name      = "Mk-84 Training mk-84",
+	model     = "mk-87",
+	user_name = _("Mk-84 Training mk-84"),
 	wsTypeOfWeapon	= {wsType_Weapon, wsType_Bomb, wsType_Bomb_A, WSTYPE_PLACEHOLDER},
 	type				= 0,
 	hMin				= 100.0,
@@ -163,8 +169,8 @@ local Bomb_Mk84 = {
 };
 
 declare_bombloadout("{Mk_87}","mk82.png",Bomb_Mk82);
---declare_bombloadout("{Mk_83_T}","mk83.png",Bomb_Mk83);
---declare_bombloadout("{Mk_84_T}","mk84.png",Bomb_Mk84);
+declare_bombloadout("{Mk_88}","mk83.png",Bomb_Mk83);
+declare_bombloadout("{Mk_84_BDU_56}","mk84.png",Bomb_Mk84);
 	
 
 -- local GBU_15 = {

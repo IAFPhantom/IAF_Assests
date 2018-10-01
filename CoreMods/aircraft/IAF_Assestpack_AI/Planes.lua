@@ -19,17 +19,18 @@ dofile(current_mod_path..'/Planes/IAF_F_16C.lua') -- Cockpit:F-18C + FM: F-18C
 dofile(current_mod_path..'/Planes/IAF_F_16D.lua') -- Dual / 
 dofile(current_mod_path..'/Planes/IAF_F_16I.lua') -- Dual / Cockpit:A-10C + FM: F-15C
 ---------------------------------------------------------
---dofile(current_mod_path..'/Planes/IAF_Anafa.lua') -- Cockpit+FM: UH-1U 
+dofile(current_mod_path..'/Planes/IAF_Anafa.lua') -- Cockpit+FM: UH-1U 
 --dofile(current_mod_path..'/Planes/IAF_Sifan.lua') -- Cockpit+FM: UH-1U 
 dofile(current_mod_path..'/Planes/IAF_Yanshuf.lua') -- Cockpit+FM: UH-1U 
 dofile(current_mod_path..'/Planes/IAF_Yasor.lua') -- Cockpit+FM: UH-1U 
---dofile(current_mod_path..'/Planes/IAF_Cobra.lua')  -- Cockpit+FM: Ka-40
+dofile(current_mod_path..'/Planes/IAF_Cobra.lua')  -- Cockpit+FM: Ka-40
 dofile(current_mod_path..'/Planes/IAF_Saraf.lua') -- Cockpit+FM: Ka-40
 --dofile(current_mod_path..'/Planes/IAF_Defender.lua') -- little bird - Cockpit+FM: SA342
 ---------------------------------------------------------
---dofile(current_mod_path..'/Planes/IAI_Arava.lua')
---dofile(current_mod_path..'/Planes/IAI_Nesher.lua')
---dofile(current_mod_path..'/Planes/IAI_Kfir.lua')
+dofile(current_mod_path..'/Planes/IAF_Fuga.lua')
+--dofile(current_mod_path..'/Planes/IAF_Arava.lua')
+--dofile(current_mod_path..'/Planes/IAF_Nesher.lua')
+--dofile(current_mod_path..'/Planes/IAF_Kfir.lua')
 --dofile(current_mod_path..'/Planes/IAI_Lavi.lua')
 ---------------------------------------------------------
 --dofile(current_mod_path..'/Planes/IAI_Pionner.lua')

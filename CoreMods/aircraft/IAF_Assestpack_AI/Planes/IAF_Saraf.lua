@@ -1,15 +1,11 @@
 
 
-IAF_AH_64A =  {
+local IAF_AH_64A =  {
 		Countries			= {"Israel"},
       
 		Name 				=   'IAF_AH-64A',
-		DisplayName			= _("IAF AH-64A Saraf"),
+		DisplayName			= _("IAF AH-64A Peten"),
 		
-		InternalCargo = {
-			nominalCapacity = 3500,
-			maximalCapacity = 3800
-		},
         EmptyWeight = "5345",
         MaxFuelWeight = "1157",
         MaxHeight = "6400",
@@ -17,8 +13,26 @@ IAF_AH_64A =  {
         MaxTakeOffWeight = "9225",
         Picture = "AH-64A.png",
         Rate = "50",
-	Shape 				= "IAF_AH_64A",
-	WorldID 			= WSTYPE_PLACEHOLDER,
+        LandRWCategories = 
+        {
+            [1] = 
+            {
+                Name = "AircraftCarrier",
+            }, -- end of [1]
+        }, -- end of LandRWCategories
+        TakeOffRWCategories = 
+        {
+            [1] = 
+            {
+                Name = "AircraftCarrier",
+            }, -- end of [1]
+            [2] = 
+            {
+                Name = "HelicopterCarrier",
+            }, -- end of [2]
+        }, -- end of TakeOffRWCategories
+		Shape 				= "IAF_AH_64A",
+		WorldID 			= WSTYPE_PLACEHOLDER,
 -----------------------
 	shape_table_data 	= 
 	{
@@ -39,7 +53,6 @@ IAF_AH_64A =  {
 			fire  = { 240, 2};
 		},
 	},		
-		WorldID 			= 157,
 
 		-- Countermeasures, 2xM-160 = 60 Chaffs/Flares (60)
 		passivCounterm = {
@@ -49,7 +62,7 @@ IAF_AH_64A =  {
 			flare = {default = 30, increment = 30, chargeSz = 1}
         },
         
-        attribute = {wsType_Air, wsType_Helicopter, wsType_Battleplane, AH_64A,
+        attribute = {wsType_Air, wsType_Helicopter, wsType_Battleplane, WSTYPE_PLACEHOLDER, AH_64A,
         "Attack helicopters",
         },
         Categories = {
@@ -358,32 +371,36 @@ IAF_AH_64A =  {
 		}, -- end of fires_pos	
 	--}, -- end of [157]-------------------------------
 ------------------------------ Guns
-		Guns = {},
+		Guns = {gun_mount("M_230", { count = 1200 },{muzzle_pos = {3.881, -1.821,  0.0}})},
 -------------------------------
 
 		
 		Damage = {  -- Damage.lua
---mi24v_cells_properties = {
-	[3]  = {critical_damage = 10, args = {65}},
-	[4]  = {critical_damage = 10, args = {150}},
-	[5]  = {critical_damage = 10, args = {149}},
-	[7]  = {critical_damage = 4,  args = {249}},
-	[9]  = {critical_damage = 5, args = {154, 298, 299}},
-	[10] = {critical_damage = 5, args = {153, 301, 302}},
-	[11] = {critical_damage = 1,  args = {167}},
-	[12] = {critical_damage = 1,  args = {161}},
-	[23] = {critical_damage = 5, args = {223}} ,
-	[24] = {critical_damage = 5, args = {213}} ,
-	[35] = {critical_damage = 5, args = {224}, deps_cells = {23}},
-	[36] = {critical_damage = 5, args = {214}, deps_cells = {24}},
-	[45] = {critical_damage = 3,  args = {235}},
-	[46] = {critical_damage = 3,  args = {233}},
-	[55] = {critical_damage = 4,  args = {159}, deps_cells = {45, 46}},
-	[56] = {critical_damage = 14, args = {81, 158}, deps_cells = {55, 45, 46}},
-	[57] = {critical_damage = 14, args = {81, 157}, deps_cells = {55, 45, 46}},
-	[59] = {critical_damage = 5,  args = {148}},
-	[60] = {critical_damage = 1,  args = {144}},
-	[82] = {critical_damage = 3,  args = {152}},
+	[0]  = {critical_damage = 2, args = {146}},
+	[1]  = {critical_damage = 1, args = {296}},
+	[2]  = {critical_damage = 1, args = {297}},
+	[3]  = {critical_damage = 12, args = {65}},
+	[4]  = {critical_damage = 12, args = {150}},
+	[5]  = {critical_damage = 12, args = {149}},
+	[7]  = {critical_damage = 4, args = {249}},
+	[9]  = {critical_damage = 13, args = {154, 299}},
+	[10] = {critical_damage = 13, args = {153, 303}},
+	[11] = {critical_damage = 2, args = {167}},
+	[12] = {critical_damage = 2, args = {161}},
+	[29] = {critical_damage = 8, args = {224}},
+	[30] = {critical_damage = 8, args = {214}},
+	[35] = {critical_damage = 8, args = {224}},
+	[36] = {critical_damage = 8, args = {214}},
+	[45] = {critical_damage = 4, args = {235}},
+	[46] = {critical_damage = 4, args = {233}},
+	[63] = {critical_damage = 10, args = {53}},
+	[55] = {critical_damage = 3, args = {159}},
+	[56] = {critical_damage = 13, args = {81, 158}, deps_cells = {55}},
+	[57] = {critical_damage = 13, args = {81, 157}, deps_cells = {55}},
+	[59] = {critical_damage = 4, args = {148}},
+	[61] = {critical_damage = 8, args = {147}},
+	[62] = {critical_damage = 8, args = {250}},
+	[82] = {critical_damage = 14, args = {152}},
 
 	},
 
@@ -465,7 +482,7 @@ add_aircraft(IAF_AH_64A)
 
 
 
-IAF_AH_64D =  {
+local IAF_AH_64D =  {
 		Countries			= {"Israel"},
       
 		Name 				=   'IAF_AH-64D',
@@ -477,8 +494,8 @@ IAF_AH_64D =  {
 		},
         EmptyWeight = "5345",
         MaxFuelWeight = "1157",
-        MaxHeight = "6400",
-        MaxSpeed = "28",
+        MaxHeight = "4500",
+        MaxSpeed = "280",
         MaxTakeOffWeight = "9225",
         Picture = "AH-64D.png",
         Rate = "50",
@@ -504,7 +521,7 @@ IAF_AH_64D =  {
 			fire  = { 240, 2};
 		},
 	},		
-		WorldID 			= 157,
+		--WorldID 			= 157,
 
 		-- Countermeasures, 2xM-160 = 60 Chaffs/Flares (60)
 		passivCounterm = {
@@ -522,6 +539,7 @@ IAF_AH_64D =  {
         },
         CanopyGeometry = makeHelicopterCanopyGeometry(LOOK_GOOD, LOOK_GOOD, LOOK_GOOD),
         Sensors = {
+           RADAR = "AN/APG-78",
             OPTIC = {"TADS DTV", "TADS DVO", "TADS FLIR"},
             --OPTIC = {"PNVS", "TADS DTV", "TADS DVO", "TADS FLIR"},
             RWR = "Abstract RWR"
@@ -811,46 +829,49 @@ IAF_AH_64D =  {
 		fires_pos = 
 		{
 			[1] = 	{0,	0,	0},
-			[2] = 	{-1.77,	0.15,	-1.017},
-			[3] = 	{-1.77,	0.15,	1.017},
-			[4] = 	{-7.6,	-0.69,	0},
-			[5] = 	{0.8,	-1.16,	0},
-			[6] = 	{-1.6,	-1.26,	0},
+			[2] = 	{-1.73,	0.19,	-0.916},
+			[3] = 	{-1.73,	0.19,	0.916},
+			[4] = 	{-7.4,	-0.72,	0},
+			[5] = 	{0.47,	-0.39,	0},
+			[6] = 	{-1.17,	-0.4,	0},
 			[7] = 	{0,	0,	0},
 			[8] = 	{0,	0,	0},
 			[9] = 	{0,	0,	0},
 			[10] = 	{0,	0,	0},
 			[11] = 	{0,	0,	0},
-		}, -- end of fires_pos	
+		}, -- end of fires_pos
 	--}, -- end of [157]-------------------------------
 ------------------------------ Guns
-		Guns = {},
+		Guns = {gun_mount("M_230", { count = 1200 },{muzzle_pos = {3.881, -1.821,  0.0}})},
 -------------------------------
 
 		
 		Damage = {  -- Damage.lua
---mi24v_cells_properties = {
-	[3]  = {critical_damage = 10, args = {65}},
-	[4]  = {critical_damage = 10, args = {150}},
-	[5]  = {critical_damage = 10, args = {149}},
-	[7]  = {critical_damage = 4,  args = {249}},
-	[9]  = {critical_damage = 5, args = {154, 298, 299}},
-	[10] = {critical_damage = 5, args = {153, 301, 302}},
-	[11] = {critical_damage = 1,  args = {167}},
-	[12] = {critical_damage = 1,  args = {161}},
-	[23] = {critical_damage = 5, args = {223}} ,
-	[24] = {critical_damage = 5, args = {213}} ,
-	[35] = {critical_damage = 5, args = {224}, deps_cells = {23}},
-	[36] = {critical_damage = 5, args = {214}, deps_cells = {24}},
-	[45] = {critical_damage = 3,  args = {235}},
-	[46] = {critical_damage = 3,  args = {233}},
-	[55] = {critical_damage = 4,  args = {159}, deps_cells = {45, 46}},
-	[56] = {critical_damage = 14, args = {81, 158}, deps_cells = {55, 45, 46}},
-	[57] = {critical_damage = 14, args = {81, 157}, deps_cells = {55, 45, 46}},
-	[59] = {critical_damage = 5,  args = {148}},
-	[60] = {critical_damage = 1,  args = {144}},
-	[82] = {critical_damage = 3,  args = {152}},
-
+	[0]  = {critical_damage = 2, args = {146}},
+	[1]  = {critical_damage = 1, args = {296}},
+	[2]  = {critical_damage = 1, args = {297}},
+	[3]  = {critical_damage = 12, args = {65}},
+	[4]  = {critical_damage = 12, args = {150}},
+	[5]  = {critical_damage = 12, args = {149}},
+	[7]  = {critical_damage = 4, args = {249}},
+	[9]  = {critical_damage = 13, args = {154, 299}},
+	[10] = {critical_damage = 13, args = {153, 303}},
+	[11] = {critical_damage = 2, args = {167}},
+	[12] = {critical_damage = 2, args = {161}},
+	[29] = {critical_damage = 8, args = {224}},
+	[30] = {critical_damage = 8, args = {214}},
+	[35] = {critical_damage = 8, args = {224}},
+	[36] = {critical_damage = 8, args = {214}},
+	[45] = {critical_damage = 4, args = {235}},
+	[46] = {critical_damage = 4, args = {233}},
+	[63] = {critical_damage = 10, args = {53}},
+	[55] = {critical_damage = 3, args = {159}},
+	[56] = {critical_damage = 13, args = {81, 158}, deps_cells = {55}},
+	[57] = {critical_damage = 13, args = {81, 157}, deps_cells = {55}},
+	[59] = {critical_damage = 4, args = {148}},
+	[61] = {critical_damage = 8, args = {147}},
+	[62] = {critical_damage = 8, args = {250}},
+	[82] = {critical_damage = 14, args = {152}},
 	},
 
 	DamageParts = 
