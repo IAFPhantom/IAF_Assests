@@ -4,7 +4,7 @@ local IAF_C_130 =  {
   	Countries			= {"Israel"},
       
 	Name 				=   'IAF_C_130',
-	DisplayName			= _("IAF C-130 Hercules"),
+	DisplayName			= _("IAF C-130 Karnaf"),
 
 	shape_table_data 	= 
 	{
