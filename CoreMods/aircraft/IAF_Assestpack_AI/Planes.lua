@@ -1,6 +1,6 @@
 ---------------------------------------------------------
---- TODO: 1. added flyable Bell-212 Anafa with UH-1U cockpit and FM 
----       2. change F-4E + 2000 cockpit to A-10A
+--- TODO: 1. added flyable Bell-212 Anafa with UH-1U cockpit and FM  - done
+---       2. change F-4E + 2000 cockpit to A-10A                     - in progress
 ---		  3. added flyable ch-53E yashor with mi-8 cockpit and FM 
 ---       4. added flyable cobra/AH-64A/D with sa-342 cockpit and FM 
 ---       5. added flyable AH-64A/D with ka-52 cockpit and FM 

@@ -53,7 +53,7 @@ local IAF_Cobra = {
 			fire  = { 240, 2};
 		},
 	},	
-		WorldID = 163,
+		--WorldID = 163,
 
 		-- Countermeasures, ALE-39, typical 30 Chaff; 30 Flares (60)
 		passivCounterm = {
