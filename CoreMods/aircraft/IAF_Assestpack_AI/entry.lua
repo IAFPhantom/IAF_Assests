@@ -26,10 +26,11 @@ declare_plugin("IAF_Asset_Pack AI by Israeli Mod Team",{
 })
 ---------------------------------------------------------
 -- Texture and Model Mounts --
+mount_vfs_model_path    ("Bazar/World/Shapes")
+mount_vfs_texture_path  ("Bazar/World/Textures")
+mount_vfs_texture_path  ("Bazar/Textures")
 mount_vfs_model_path	(current_mod_path.."/Shapes")
-mount_vfs_texture_path  (current_mod_path.."/Textures")
 mount_vfs_liveries_path (current_mod_path.."/Liveries")
-
 mount_vfs_texture_path(current_mod_path ..  "/Theme/ME")--for simulator loading window
 
 

@@ -1,0 +1,164 @@
+{
+ "f15nose": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15bottom": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15wingr": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15centr": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15_glass_main": {
+  "reflMult": 0.60000002384185791016,
+  "reflAdd": 0.050000000745058059692,
+  "specMult": 0.5,
+  "specAdd": -0.15000000596046447754,
+  "specSelect": 1,
+  "albedoLevel": 0.059999998658895492554,
+  "albedoContrast": 0.89999997615814208984
+ },
+ "f15wingl": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15_selfillum": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15_afterburn": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "f15stab": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15PTB": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15_BANO_bill": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "f15numbers": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "f15_cockpit": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "pilot_F15_00_helmet": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "pilot_F15_00_body": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15_aces2": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "pilot_F15_patch": {
+  "reflMult": -0.80000001192092895508,
+  "reflAdd": 0.5,
+  "specMult": -1.7599999904632568359,
+  "specAdd": 0.75,
+  "specSelect": 0,
+  "albedoLevel": 0.10000000149011611938,
+  "albedoContrast": 0.94999998807907104492
+ },
+ "f15e_BANO_bill": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ }
+}
