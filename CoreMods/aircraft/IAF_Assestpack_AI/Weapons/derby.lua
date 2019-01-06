@@ -2,9 +2,24 @@
 local Derby =     
 {
 		category		= CAT_AIR_TO_AIR,
-        Name 			= "Derby", 	-- [v] Derby
+        Name = WSTYPE_PLACEHOLDER, -- AIM-120C
+		display_name = _('Derby'),
+        name 			= "Derby", 	-- [v] Derby
 		user_name		= _("Derby"),
-		wsTypeOfWeapon 	= {wsType_Weapon,wsType_Missile,wsType_AA_Missile,WSTYPE_PLACEHOLDER},
+		wsTypeOfWeapon 	= {wsType_Weapon,wsType_Missile,wsType_AA_Missile,106},  --WSTYPE_PLACEHOLDER
+		model = 'Derby',
+		shape_table_data =
+		{
+			{
+				name = "Derby",
+				file = "Derby",
+				life = 1,
+				fire  = { 0, 1},
+				username = "DBY",
+				index = WSTYPE_PLACEHOLDER,
+			},
+		},
+
         Escort = 0,			-- [v] Accompaniment: 0 - no, 1 - LA starter , 2 - another LA 3 - c land
         Head_Type = 2,		-- [v] Type homing (GOS) missile head type ; 1= InfraredSeeker = 1;    // thermal IR (infrared seeker)
 		sigma = {5, 5, 5},	-- the maximum error of sight in meters
@@ -38,18 +53,16 @@ local Derby =
         Z_back = 0.0, --- ?
         Reflection = 0.0329,	-- effective surface radio reflections , square footage
         KillDistance = 15.0,		-- [v] this distance is used to fire a fuze
-		ccm_k0 = 1.0,  -- Counter Countermeasures Probability Factor. Value = 0 - missile has absolutely resistance to countermeasures. Default = 1 (medium probability)
-		shape_table_data =
-		{
-			{
-				name = "Derby",
-				file = "Derby",
-				life = 1,
-				fire  = { 0, 1},
-				username = "DBY",
-				index = WSTYPE_PLACEHOLDER,
-			},
-		},
+		ccm_k0 = 1.0,  -- Counter Countermeasures Probability Factor. Value = 0 - missile has absolutely resistance to countermeasures. Default = 1. The curve is non linear!
+		loft = 1,
+		hoj = 1,
+		
+		PN_coeffs = {3, 				-- Number of Entries	
+					5000.0 ,1.0,		-- Less 5 km to target Pn = 1
+					10000.0, 0.5,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
+					15000.0, 0.2};		-- Between 15 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 15 km Pn = 0.2.
+				
+
 		ModelData = 
 		{   58 ,  -- model params count
 		0.4 ,   -- characteristic square (характеристическая площадь)
@@ -107,23 +120,31 @@ local Derby =
 
 declare_weapon(Derby) 
 
-declare_loadout(
-		{
-			category 		= CAT_AIR_TO_AIR,
-			CLSID 			= "{Refael_Derby}",
-			Picture			=	"aim120c.png",
-			displayName		=	_("Refael Derby"),
-			wsTypeOfWeapon	=	Derby.wsTypeOfWeapon,
-			attribute		=	{4,	4,	32,	WSTYPE_PLACEHOLDER},
-			Cx_pil   		=   0.001959765625,
-			Count   		=   1,
-			Weight			=	118,
+declare_loadout({
+	category 		= CAT_AIR_TO_AIR,
+	CLSID 			= "{Refael_Derby}",
+	Picture			=	"aim120c.png",
+	displayName		=	_("Refael Derby"),
+	wsTypeOfWeapon	=   Derby.wsTypeOfWeapon, --{4,	4,	7,	AIM_120C},-- need to check 
+	attribute		=	{4,	4,	32,	Derby.wsTypeOfWeapon[4]},
+	Cx_pil   		=   0.001959765625,
+	Count   		=   1,
+	Weight			=	118,
 
-			Elements   =   
-			{ 
-				{	ShapeName	=	"Derby" ,	Position   =   {0.0,   0.0,   0.0}},
-			}, 
-		})
+	Elements   =   
+	{ 
+		{	
+			DrawArgs	=	
+			{
+				[1]	=	{1,	1},
+				[2]	=	{2,	1},
+				[3]	=	{3,	1},
+			}, -- end of DrawArgs
+			ShapeName	=	"Derby" ,	
+			Position   =   {0.0,   0.0,   0.0},
+		},
+	}, 
+})
 
 
 
@@ -167,11 +188,19 @@ local DerbyER =
         Reflection = 0.0329,	-- effective surface radio reflections , square footage
         KillDistance = 15.0,		-- [v] this distance is used to fire a fuze
 		ccm_k0 = 1.0,  -- Counter Countermeasures Probability Factor. Value = 0 - missile has absolutely resistance to countermeasures. Default = 1 (medium probability)
+		loft = 1,
+		hoj = 1,
+		
+		PN_coeffs = {3, 				-- Number of Entries	
+					5000.0 ,1.0,		-- Less 5 km to target Pn = 1
+					10000.0, 0.5,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
+					15000.0, 0.2};		-- Between 15 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 15 km Pn = 0.2.
+		
 		shape_table_data =
 		{
 			{
 				name = "DerbyER",
-				file = "Derby",
+				file = "DerbyER",
 				life = 1,
 				fire  = { 0, 1},
 				username = "DBE",
@@ -241,15 +270,15 @@ declare_loadout(
 			CLSID 			= "{Refael_DerbyER}",
 			Picture			=	"aim120c.png",
 			displayName		=	_("Refael Derby ER"),
-			wsTypeOfWeapon	=	DerbyER.wsTypeOfWeapon,
-			attribute		=	{4,	4,	32,	WSTYPE_PLACEHOLDER},
+			wsTypeOfWeapon	=   DerbyER.wsTypeOfWeapon, --{4,	4,	7,	AIM_120C},-- need to check 
+			attribute		=	{4,	4,	32,	DerbyER.wsTypeOfWeapon[4]},
 			Cx_pil   		=   0.001959765625,
 			Count   		=   1,
 			Weight			=	118,
 
 			Elements   =   
 			{ 
-				{	ShapeName	=	"Derby" ,	Position   =   {0.0,   0.0,   0.0}},
+				{	ShapeName	=	"DerbyER" ,	Position   =   {0.0,   0.0,   0.0}},
 			}, 
 		})
 
